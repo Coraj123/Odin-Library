@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+         <title>Library </title>
+         <link rel="stylesheet" href="Library.css"/>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+
+<body>
+
+<div class=banner> <p>Library</p></div>
+    
+<button class="createLibrary"> <p> NEW BOOK </p>
+   <span class="material-symbols-outlined">
+        book_2
+     </span>
+ </button>
+
+<div id="wrapper">
+    <table id="table">
+        <tr class="header">
+            <th>Book</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+            <th>Edit</th>
+       </tr>
+      
+      
+    </table>
+
+</div>
+
+<div id="containerSideBarOpen">
+  
+    <div class = "inputContainer">
+    <form id="myForm">
+
+        <div id = "userInput"> <input type="text" id="userInput1" class="userInputs" placeholder="Title">
+        </div>
+
+        <div id = "userInput"> <input type="text" id="userInput2" class="userInput" placeholder="Author">
+        </div> 
+
+         <div id = "userInput"> <input type="text" id="userInput3" class="userInput" placeholder="Pages">
+         </div>
+
+        <div id = "userInput" class="checkbox_toggle">
+                <label for="Yes_toggle" class="yes_label"> Yes </label>
+                <input type="checkbox" id="Yes_toggle" class="Yes_toggle">
+                <label for="No_toggle" class="No_label"> No </label>
+                <input type="checkbox" id="No_toggle" class="No_toggle">   
+        </div>
+
+        <div id = "userInput" class="submitBtn">
+            <button type="submit" id="submit">submit</button>
+        </div>
+    </form>
+  
+   
+    </div>
+
+         
+</div>
+    <script src="Library.js">
+
+    </script>
+
+</body>
