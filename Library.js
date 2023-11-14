@@ -94,20 +94,23 @@ buttons.forEach((button) => {
       });
 });
 
-function Book (title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-};
 
-Book.prototype.toggleRead = function() {
-    // 'this' refers to the specific Book instance
-    if (this.read === "Yes") {
-        this.read = "No";
-    } else {
-        this.read = "Yes";
+
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
     }
+
+    toggleRead() {
+        if (this.read === "Yes") {
+            this.read = "No";
+        } else {
+            this.read = "Yes";
+        };
+    };
 };
 
 let bookCounter = 1; // Initialize a counter for book IDs
@@ -127,7 +130,7 @@ bookArry[2] = document.getElementById("userInput3").value;
     };
 
 let bookName = `Book ${bookCounter}`; // Generate a unique book name
-myLibrary.push(new Book(bookArry[0], bookArry[1], bookArry[2], bookArry[3]));
+myLibrary.push(new Book(bookArry[0], bookArry[1], bookArry[2], bookArry[3])); //*Change CODE*
 console.log(myLibrary);
 bookCounter++; // Increment the counter for the next book
 
